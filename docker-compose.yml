@@ -1,0 +1,9 @@
+# this app runs in a single container
+quotes:
+  image: misterbisson/verge-pull-quote-generator:latest
+  restart: always
+  mem_limit: 128m
+  ports:
+    - 80:80
+  labels:
+    - triton.cns.services=quotes

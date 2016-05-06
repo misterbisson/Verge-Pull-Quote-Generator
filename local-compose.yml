@@ -1,0 +1,6 @@
+quotes:
+  extends:
+    file: docker-compose.yml
+    service: quotes
+  build: .
+  restart: never
